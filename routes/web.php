@@ -25,5 +25,5 @@ Route::get('/account', [UserController::class, 'index'])->name('account');
 
 Route::prefix('admin')->group(function () {
     Route::get('/', [AdminController::class, 'index'])->name('admin.dashboard');
-    // 他の管理者ルートを追加
+    // 他の管理者
 });
